@@ -16,6 +16,10 @@ buildscript {
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
     }
+    android {
+        compileSdkVersion rootProject.ext.compileSdkVersion
+        namespace "com.calendarsexample"
+    }
 }
 
 apply plugin: "com.facebook.react.rootproject"
